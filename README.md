@@ -42,7 +42,7 @@
 <!-- Browserstack -->
 
 ### <img width="3%" title="Browserstack" src="images/logo/browserstack.png"> Запуск проекта в [Browserstack](https://www.browserstack.com)
-#### После запуска сборки в Jenkins, тесты начинают проходить удаленно через Browserstack. Здесь мы в реальном времени можем следить за результатом прохождения тестов:
+#### После запуска сборки в Jenkins, тесты стартуют удаленно, с помощью Browserstack. Здесь мы в реальном времени можем следить за результатом прохождения тестов:
 #### Тесты проходят на девайсе Google Pixel 3, Android 9.0
 ![This is an image](images/screenshots/browserstack.png)
 
