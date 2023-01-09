@@ -76,7 +76,9 @@
 
 #### Вся отчетность сохраняется в Allure TestOps, где есть вся аналогичная информация с Allure отчета
 
-![This is an image](images/screenshots/allure_testops_dashboard.png)
+![This is an image](images/screenshots/allure_testops_dashboardd.png)
+
+![This is an image](images/screenshots/allure_testops_dashboard2.png)
 
 #### После того, как мы запускаем сборку в Jenkins, Allure TestOps автоматически создает test suites, test cases на основе нашего кода:
 
