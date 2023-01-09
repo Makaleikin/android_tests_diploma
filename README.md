@@ -43,7 +43,7 @@
 
 ### <img width="3%" title="Browserstack" src="images/logo/browserstack.png"> Запуск проекта в [Browserstack](https://www.browserstack.com)
 #### После запуска сборки в Jenkins, тесты начинают проходить удаленно через Browserstack. Здесь мы в реальном времени можем следить за результатом прохождения тестов:
-
+#### Тесты проходят на девайсе Google Pixel 3, Android 9.0
 ![This is an image](images/screenshots/browserstack.png)
 
 #### Пример прохождения теста в Browserstack:
@@ -76,8 +76,11 @@
 
 #### Вся отчетность сохраняется в Allure TestOps, где есть вся аналогичная информация с Allure отчета
 
-![This is an image](images/screenshots/allure_testops_dashboardd.png)
+#### Dashboard:
 
+![This is an image](images/screenshots/allure_testops_dashboard.png)
+
+#### Launches:
 ![This is an image](images/screenshots/allure_testops_dashboard2.png)
 
 #### После того, как мы запускаем сборку в Jenkins, Allure TestOps автоматически создает test suites, test cases на основе нашего кода:
@@ -100,4 +103,4 @@
 ## <img width="3%" title="Jira" src="images/logo/jira.png"> Интеграция с Jira
 #### Настроив через Allure TestOps интеграцию с Jira, мы можем отправлять тест-кейс и тест раны в Jira
 
-![This is an image](images/screenshots/jira_issue.png)
+![This is an image](images/screenshots/jira.png)
