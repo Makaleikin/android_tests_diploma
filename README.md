@@ -1,4 +1,4 @@
-# Project UI autotests for Tesla
+# Project UI android_app-autotests for Wikipedia
 <!-- Technology -->
 
 ## Используемые инструменты и фреймворки:
@@ -11,34 +11,44 @@
   <code><img width="5%" title="GitHub" src="images/logo/github.png"></code>
   <code><img width="5%" title="Jenkins" src="images/logo/jenkins.png"></code>
   <code><img width="5%" title="Docker" src="images/logo/docker.png"></code>
-  <code><img width="5%" title="Selenoid" src="images/logo/selenoid.png"></code>
+  <code><img width="5%" title="Selenoid" src="images/logo/browserstack.png"></code>
   <code><img width="5%" title="Allure Report" src="images/logo/allure_report.png"></code>
   <code><img width="5%" title="Allure TestOps" src="images/logo/allure_testops.png"></code>
   <code><img width="5%" title="Jira" src="images/logo/jira.png"></code>
   <code><img width="5%" title="Telegram" src="images/logo/tg.png"></code>
+  <code><img width="5%" title="Android_studio" src="images/logo/android_studio.png"></code>
+  <code><img width="5%" title="Appium" src="images/logo/appium.png"></code>
 </p>
 
 <!-- Тест кейсы -->
 
 ## Что проверяют автотесты:
-* Проверка основных характеристик автомобиля "Tesla Model S"
-* Покупка нового автомобиля "Tesla Model S"
-* Проверка спецификаций "Tesla Model 3"
-* Проверка спецификаций "Tesla Model S"
+**Все проверки проходят в приложении Wikipedia**
+* Проверка поиска, через поисковой запрос
+* Проверка голосового поиска
+* Проверка пустого поискового запроса
+* Добавления еще одного языка
 
 <!-- Jenkins -->
 
 ## <img width="3%" title="Jenkins" src="images/logo/jenkins.png"> Запуск проекта в Jenkins
 
-## [Job](https://jenkins.autotests.cloud/job/ui_diploma_tests/)
+## [Job](https://jenkins.autotests.cloud/job/diploma_mobile_tests/)
 
-#### Когда нажимаем "Собрать сейчас" начнется сборка билда, запустятся тесты. Тесты проходят на виртуальной машине в Selenide.
+#### Когда нажимаем "Собрать сейчас" начнется сборка билда, запустятся тесты. Тесты проходят на реальном девайсе, с помощью Browserstack
 
 ![This is an image](images/screenshots/jenkins_start.png)
 
-#### Пример прохождения теста в Selenide:
+<!-- Browserstack -->
 
-![This is an image](images/screenshots/example_test.gif)
+### <img width="3%" title="Browserstack" src="images/logo/browserstack.png"> Запуск проекта в [Browserstack](https://www.browserstack.com)
+#### После запуска сборки в Jenkins, тесты начинают проходить удаленно через Browserstack. Здесь мы в реальном времени можем следить за результатом прохождения тестов:
+
+![This is an image](images/screenshots/browserstack.png)
+
+#### Пример прохождения теста в Browserstack:
+
+![This is an image](images/screenshots/example_mobile_test.gif)
 
 <!-- Allure report -->
 
@@ -50,7 +60,7 @@
 #### Во вкладке Graphs можно посмотреть графики о прохождении тестов, по их приоритезации, по времени прохождения и др.
 ![This is an image](images/screenshots/allure_graphs.png)
 
-#### Во вкладке Suites находятся собранные тест кейсы, к которым прикрепляются аттачменты: видео прохождение теста, скриншот, page_source и логи браузера
+#### Во вкладке Suites находятся собранные тест кейсы, к которым прикрепляются аттачменты: в данном случае только видео прохождение тестов
 ![This is an image](images/screenshots/allure_attachments.png)
 
 <!-- Telegram -->
